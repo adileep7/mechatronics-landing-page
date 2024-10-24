@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #003d66;
+    color: white;
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.logo {
+    max-width: 200px; /* Set logo size to 200px */
+    float: left; /* Align logo to the left */
+    margin-right: 20px; /* Add space to the right */
+    margin-top: -20px; /* Move the logo higher */
+}
+
+header h1 {
+    text-align: center; /* Center the h1 text */
+    margin: 0; /* Remove default margin */
+    margin-top: -10px; /* Adjust this value to bring h1 down */
+    clear: both; /* Ensure it stays below the floated logo */
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center; /* Center images */
+    gap: 10px; /* Space between images */
+    flex-wrap: nowrap; /* Prevent wrapping on smaller screens */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.hero-image {
+    max-width: 30%; 
+    height: auto; /* Maintain aspect ratio */
+    flex: 0 0 auto; /* Prevent shrinking */
+}
+
+.info, .courses, .cta, .video {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #003d66;
+}
+
+.cta h2 {
+    text-align: center; 
+}
+
+.cta {
+    text-align: center; 
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003d66;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #005f8c;
+}
+
+iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003d66;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header {
+        text-align: center; /* Center header content on small screens */
+    }
+
+    .logo {
+        max-width: 150px; /* Adjust logo size for mobile */
+        margin-top: 0; /* Reset margin */
+    }
+
+    header h1 {
+        margin-top: 0; /* Reset margin for h1 on mobile */
+    }
+
+    .hero-image {
+        max-width: 30%; /* Keep them in a row on mobile */
+        flex: 0 0 auto; /* Prevent shrinking on mobile */
+    }
+
+    .image-row {
+        overflow-x: auto; /* Allow horizontal scrolling */
+        padding: 10px 0; /* Add some padding for better spacing */
+    }
+
+    .info, .courses, .cta {
+        padding: 15px; /* Adjust padding */
+        margin: 5px; /* Reduce margin */
+    }
+
+    .button {
+        width: 100%; /* Full-width buttons on mobile */
+        padding: 15px; /* Increase padding for touch targets */
+    }
+}
